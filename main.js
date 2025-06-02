@@ -58,7 +58,9 @@ submit.addEventListener("click", function (e) {
     !image.value ||
     !message
   ) {
-    return alert("enter all input field");
+    alert("enter all input field");
+  } else {
+    alert("Sent successfully");
   }
 
   console.log(image.value);
