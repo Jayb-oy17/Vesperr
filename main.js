@@ -76,3 +76,43 @@ submit.addEventListener("click", function (e) {
   console.log(data, allData);
   nam.value = email.value = subject.value = message.value = image.value = "";
 });
+
+// SWIPER JS RESPONSIVENESS
+const swiperEl = document.querySelector("swiper-container");
+Object.assign(swiperEl, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 1,
+    },
+    400: {
+      slidesPerView: 1,
+    },
+    300: {
+      slidesPerView: 1,
+    },
+    200: {
+      slidesPerView: 1,
+    },
+  },
+});
+swiperEl.initialize();

@@ -86,7 +86,7 @@ h6 {
   font-size: 16px;
 }
 
-.section{
+.section {
   scroll-margin-top: 8rem;
 }
 
@@ -801,13 +801,13 @@ h6 {
   border: none;
 }
 
-.image-upload{
+.image-upload {
   width: 100%;
   /* height: 100%; */
   margin-bottom: 2rem;
 }
 
-.image-upload::file-selector-button{
+.image-upload::file-selector-button {
   background-color: var(--accent-color);
   border: none;
   color: white;
@@ -845,3 +845,54 @@ h6 {
 }
 
 /*--------------CONTACT------------------*/
+
+/* SWIPER STYLES */
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  background: var(--bg-2);
+  padding: 2rem;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+
+.sw-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 1rem;
+}
+
+.sw-icon ion-icon {
+  font-size: 2rem;
+  color: goldenrod;
+}
+
+.sw-text{
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.sw-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.sw-name{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sw-sub{
+  font-size: 14px;
+}
+
+/* SWIPER STYLES */
