@@ -16,7 +16,7 @@ const navObserver = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-100px",
+    rootMargin: "-90px",
   }
 );
 
@@ -33,11 +33,10 @@ navBtn.addEventListener("click", function () {
 // NAV STICK REMOVER
 const navLink = document.querySelectorAll(".navLink");
 navLink.forEach((btn) => {
-  btn.addEventListener('click', function(){
-    nav.classList.remove('stick')
-  })
+  btn.addEventListener("click", function () {
+    nav.classList.remove("stick");
+  });
 });
-
 
 // FORM VALIDATION
 const nam = document.getElementById("name");

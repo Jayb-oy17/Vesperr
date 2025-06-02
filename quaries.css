@@ -7,6 +7,10 @@
     display: flex;
   }
 
+  .open {
+    display: flex;
+  }
+
   .close {
     display: none;
   }
@@ -38,16 +42,16 @@
     height: 100%;
   }
 
-  .stick .navLink{
+  .stick .navLink {
     font-size: 20px;
     font-weight: 600;
   }
 
-  .stick .open{
+  .stick .open {
     display: none;
   }
 
-  .stick .close{
+  .stick .close {
     display: block;
     color: white;
     z-index: 99;
@@ -104,7 +108,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .serviceBox,
   .teamBox,
   .ptTabContent {

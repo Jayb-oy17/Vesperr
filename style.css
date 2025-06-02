@@ -808,7 +808,7 @@ h6 {
 }
 
 .image-upload::file-selector-button{
-  background-color: blue;
+  background-color: var(--accent-color);
   border: none;
   color: white;
   width: 20rem;
