@@ -35,6 +35,9 @@ const navLink = document.querySelectorAll(".navLink");
 navLink.forEach((btn) => {
   btn.addEventListener("click", function () {
     nav.classList.remove("stick");
+    navLink.forEach((clicker) => clicker.classList.remove("nActive"));
+
+    btn.classList.add("nActive");
   });
 });
 
@@ -115,4 +118,21 @@ Object.assign(swiperEl, {
     },
   },
 });
-swiperEl.initialize();
+// swiperEl.initialize();
+
+// PORTFOLIO TAB COMPONENT
+const eachPort = document.querySelectorAll(".ptTab");
+const eachPortContent = document.querySelectorAll(".ptTabContent");
+
+eachPort.forEach((btn) =>
+  btn.addEventListener("click", function () {
+    eachPort.forEach((clicker) => clicker.classList.remove("ptActive"));
+    eachPortContent.forEach((clicker) =>
+      clicker.classList.remove("ptContActive")
+    );
+
+    btn.classList.add("ptActive");
+    const eachDisplay = btn.getAttribute("data-target");
+    document.getElementById(eachDisplay).classList.add("ptContActive");
+  })
+);

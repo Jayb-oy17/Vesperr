@@ -60,7 +60,7 @@
 
 @media (max-width: 1000px) {
   .pad-10 {
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
   }
 
   .serviceBox,
@@ -89,29 +89,25 @@
     grid-template-columns: 1fr;
   }
 
-  .ptTabContent {
+  .ptContActive {
     grid-template-columns: 1fr 1fr;
   }
 
   .clientBox {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  .pad-10 {
-    padding: 2rem 10rem;
-  }
 }
 
 @media (max-width: 600px) {
   .pad-10 {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
 
 @media (max-width: 500px) {
   .serviceBox,
   .teamBox,
-  .ptTabContent {
+  .ptContActive {
     grid-template-columns: 1fr;
   }
 
